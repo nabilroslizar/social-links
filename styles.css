@@ -1,0 +1,39 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  margin: 0; /* Remove default body margin */
+}
+
+p {
+  font-weight: 400; /* Regular */
+}
+
+h1 {
+  font-weight: 700; /* Bold */
+}
+
+strong {
+  font-weight: 600; /* Semi-bold */
+}
+
+.main-container {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  background-color: green;
+}
+
+.socials {
+  background-color: pink;
+}
