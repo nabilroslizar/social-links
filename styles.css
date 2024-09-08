@@ -8,6 +8,7 @@ body {
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
   margin: 0; /* Remove default body margin */
+  text-align: center;
 }
 
 p {
@@ -16,6 +17,8 @@ p {
 
 h1 {
   font-weight: 700; /* Bold */
+  color: hsl(75, 94%, 57%);
+  margin: 0;
 }
 
 strong {
@@ -23,31 +26,68 @@ strong {
 }
 
 .main-container {
-  background-color: blue;
+  background-color: hsl(0, 0%, 12%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50vh;
+  padding-top: 30px;
+  border-radius: 20px;
 }
 
 .profile {
-  background-color: green;
+  /* background-color: green; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
+.profileimage {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  align-items: center
+  justify-content: center;
+  overflow: hidden; /*make sure the image stay in the circle */
+}
+
+img {
+    object-fit: cover;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
 .socials {
-  background-color: pink;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 80%;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
+
+
 .socials a {
-  font-size: 30px;
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
   background-color: gray;
-  margin: auto;
-  padding: 10px 20px;
   width: 100%;
   text-align: center;
   border-radius: 10px;
+  padding: 10px 0;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  
+}
+
+.socials a:hover{
+    background-color:hsl(75, 94%, 57%);
+    color: black;
+    transition: background-color 0.3s ease;
 }
