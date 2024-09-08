@@ -91,3 +91,23 @@ img {
     color: black;
     transition: background-color 0.3s ease;
 }
+
+@media (max-width: 768px) {
+    .main-container {
+      width: 90%; /* Adjusts width to fit mobile screens */
+      padding: 20px 10px; /* Adds padding inside the container */
+      margin-left: 5%; /* Adds margin to the left */
+      margin-right: 5%; /* Adds margin to the right */
+    }
+  
+    .socials {
+      flex-direction: column; /* Keep socials stacked vertically */
+      width: 90%; /* Make sure it takes the full width */
+    }
+  
+    .socials a {
+      font-size: 16px; /* Slightly reduce font size for mobile */
+      padding: 12px 0; /* Adjust padding for mobile */
+    }
+  }
+  
